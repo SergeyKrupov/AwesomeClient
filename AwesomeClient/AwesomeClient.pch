@@ -1,0 +1,22 @@
+//
+//  AwesomeClient.pch
+//  AwesomeClient
+//
+//  Created by Sergey on 31/10/15.
+//  Copyright © 2015 Sergey Krupov. All rights reserved.
+//
+
+#ifndef AwesomeClient_pch
+#define AwesomeClient_pch
+
+#import <InstagramKit/InstagramKit.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord+Actions.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <AMTagListView/AMTagListView.h>
+
+#import "IGUser.h"
+#import "IGImage.h"
+#import "IGTag.h"
+
+#endif /* AwesomeClient_pch */

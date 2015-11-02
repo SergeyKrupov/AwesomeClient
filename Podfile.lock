@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMTagListView (1.0.0)
+  - InstagramKit (3.6.9):
+    - AFNetworking (~> 2.0)
+    - InstagramKit/Exclude-UICKeyChainStore (= 3.6.9)
+  - InstagramKit/Exclude-UICKeyChainStore (3.6.9):
+    - AFNetworking (~> 2.0)
+  - MagicalRecord (2.3.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+
+DEPENDENCIES:
+  - AMTagListView
+  - InstagramKit (~> 3.6)
+  - MagicalRecord
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  AMTagListView: e1341c9362b49c15ded10f489b7210eb7c7b503a
+  InstagramKit: 1f937c5c4b8469fd00a31e235d5e7d3e256ffe5d
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Automatic">
+    <entity name="IGImage" representedClassName="IGImage" syncable="YES">
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="imageHeight" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageUrl" attributeType="String" syncable="YES"/>
+        <attribute name="imageWidth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="uniqueID" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IGTag" inverseName="images" inverseEntity="IGTag" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IGUser" inverseName="images" inverseEntity="IGUser" syncable="YES"/>
+    </entity>
+    <entity name="IGTag" representedClassName="IGTag" syncable="YES">
+        <attribute name="text" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IGImage" inverseName="tags" inverseEntity="IGImage" syncable="YES"/>
+    </entity>
+    <entity name="IGUser" representedClassName="IGUser" syncable="YES">
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="username" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IGImage" inverseName="user" inverseEntity="IGImage" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="IGImage" positionX="-54" positionY="18" width="128" height="165"/>
+        <element name="IGUser" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="IGTag" positionX="-63" positionY="63" width="128" height="75"/>
+    </elements>
+</model>
